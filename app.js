@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
-  res.send('Testing Jenkins CI/CD!')
+  res.send('Testing Jenkins CI/CD with AWS!')
 })
 
 app.listen(3000, function () {
