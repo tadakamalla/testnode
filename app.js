@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
-  res.send('Testing Multi-cloud Orchestration!')
+  res.send('Testing Jenkins Continous Integration!')
 })
 
 app.listen(3000, function () {
