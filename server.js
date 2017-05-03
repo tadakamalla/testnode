@@ -5,11 +5,18 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var PORT = process.env.PORT || 8085;
 var app = express();
+var fs = require("fs");
+var path = require('path');
+
 
 
 
 app.get('/', function (req, res) {
-	  res.send('Purple Belt Demo!')
+	fs.readFile("/" + "employee.json", 'utf8', function (err, data) {
+	       console.log( data );
+	       res.end( data );
+	   });
+
 	})
 
 app.listen(PORT, function () {
