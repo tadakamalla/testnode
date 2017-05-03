@@ -9,7 +9,12 @@ var app = express();
 
 
 app.get('/', function (req, res) {
-	  res.send('Testing Jenkins CI/CD with AWS and BMCS!')
+
+	   fs.readFile( __dirname + "/" + "employee.json", 'utf8', function (err, data) {
+	       console.log( data );
+	       res.end( data );
+	   });
+
 	})
 
 app.listen(PORT, function () {
