@@ -14,7 +14,7 @@ app.use('/', express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
 	fs.readFile("employee.json", 'utf8', function (err, data) {
 	       console.log( data );
-	       res.end( data );
+	       res.send( data );
 	   });
 
 	})
