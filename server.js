@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var PORT = process.env.PORT || 8085;
 var app = express();
 var path = require('path');
+var fs = require("fs");
 
 
 
@@ -15,7 +16,7 @@ app.get('/', function (req, res) {
 	     response.contentType("application/json");
 	     response.send(data);
 	  });
-	})
+	});
 
 app.listen(PORT, function () {
     console.log('listening on port ' + PORT)
