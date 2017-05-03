@@ -12,7 +12,7 @@ var path = require('path');
 
 
 app.get('/', function (req, res) {
-	fs.readFile('./employee.json', 'utf8', function (err, data) {
+	fs.readFile('/employee.json', 'utf8', function (err, data) {
 	       console.log( data );
 	       res.end( data );
 	   });
