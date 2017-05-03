@@ -10,11 +10,7 @@ var fs = require("fs");
 
 
 app.get('/', function (req, res) {
-	fs.readFile( __dirname + "/" + "employee.json", 'utf8', function (err, data) {
-	       console.log( data );
-	       res.send( data );
-	   });
-
+	  res.send('Hello DevCS')
 	})
 
 app.listen(PORT, function () {
