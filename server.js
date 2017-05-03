@@ -10,10 +10,9 @@ var fs = require("fs");
 
 
 app.get('/', function (req, res) {
-
-	   fs.readFile( __dirname + "/" + "employee.json", 'utf8', function (err, data) {
+	fs.readFile( __dirname + "/" + "employee.json", 'utf8', function (err, data) {
 	       console.log( data );
-	       res.end( data );
+	       res.send( data );
 	   });
 
 	})
