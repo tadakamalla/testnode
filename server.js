@@ -9,8 +9,12 @@ var path = require('path');
 
 
 
-app.get('/u01/app/', function (req, res) {
-	  res.send(employee.json);
+app.get('/', function (req, res) {
+	 var empFile="/u01/app/employee.json";
+	 fs.readFile(empFile, function (err,data){
+	     response.contentType("application/json");
+	     response.send(data);
+	  });
 	})
 
 app.listen(PORT, function () {
