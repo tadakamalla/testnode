@@ -6,11 +6,16 @@ var bodyParser = require('body-parser');
 var PORT = process.env.PORT || 8085;
 var app = express();
 var fs = require("fs");
-
+var jsonData = '';
 
 
 app.get('/', function (req, res) {
-	  res.send('Hello DevCS')
+	fs.readFile('./employee.json', 'utf8', function (err, data) {
+		  if(err) throw err;
+		  jsonData = JSON.parse(data);
+		  res.send(jsonData);
+		});
+
 	})
 
 app.listen(PORT, function () {
