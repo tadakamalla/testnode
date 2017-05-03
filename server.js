@@ -9,7 +9,7 @@ var app = express();
 
 
 app.get('/', function (req, res) {
-	  res.send('employee.json');
+	  res.send(employee.json);
 	})
 
 app.listen(PORT, function () {
