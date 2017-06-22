@@ -1,0 +1,15 @@
+{
+     "deployment_id":"NodeWeb-20160919-123512",
+     "deployment_name":"NodeWeb",
+     "desired_state":1,
+     "placement":{"pool_id":"development"},
+     "quantities":{"NodeWeb":1},"stack":
+        {
+          "content":"version: 2\nservices:\n  NodeWeb:\n    image: \"tadakamalla/node-web-app\"\n    hostname:      \"nodejs-occs-wkr-1\"\n    ports:\n      - \"8086:8085/tcp\"\n" ,
+          "service_id":"NodeWeb",
+          "service_name":"NodeWeb1",
+          "subtype":"service"
+       }
+}
+
+
