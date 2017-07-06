@@ -1,7 +1,11 @@
  {
       "fname":"Aravind",
       "lname":"Tadakamalla",
+<<<<<<< HEAD
       "employee_id": "e7890",
+=======
+      "employee_id": "eXXXX",
+>>>>>>> branch 'master' of https://github.com/tadakamalla/testnode.git
       "location":"Charlotte",
       "title":"Enterprise Architect",
       "team":"Iaas and App-Dev",
