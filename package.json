@@ -1,7 +1,7 @@
 {
-    "name": "ACCS Demo",
+    "name": "JET-microservice-frontend",
     "version": "0.0.0",
-    "description": "ACCS Demo",
+    "description": "JET Microservices Hackathon Frontend",
     "author": "aravind.tadakamalla@oracle.com",
     "scripts": {
         "prepublish": "zip -r target/nodesample.zip node_modules doc_root manifest.json *.js *.json"
