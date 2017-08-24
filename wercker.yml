@@ -24,9 +24,11 @@ build:
   steps:
     # A step that executes `npm install` command
     - npm-install
-    - script:
-        name: build image
-        code: docker build -t https://registry.hub.docker.com/tadakamalla/mynode .
+    - docker-build:
+        username: $USERNAME
+        password: $PASSWORD
+        repository: tadakamalla/mynode
+        registry: https://registry.hub.docker.com
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
