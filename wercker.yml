@@ -24,7 +24,7 @@ build:
   steps:
     # A step that executes `npm install`
     - npm-install
-    - docker-build:
+    - internal/docker-build:
         username: $USERNAME
         password: $PASSWORD
         repository: tadakamalla/mynode
