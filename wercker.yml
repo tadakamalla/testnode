@@ -18,11 +18,8 @@ box: node
     # http://devcenter.wercker.com/docs/services/mongodb.html
 build:
    steps:
-      - internal/docker-build:
-        username: $USERNAME
-        password: $PASSWORD
-        repository: tadakamalla/mynode
-        registry: https://registry.hub.docker.com
+      - npm-install
+       
 
 push:
   steps:
