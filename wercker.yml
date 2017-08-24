@@ -17,13 +17,8 @@ box: node
     # - mongo
     # http://devcenter.wercker.com/docs/services/mongodb.html
 build:
-  # The steps that will be executed on build
-  # Steps make up the actions in your pipeline
-  # Read more about steps on our dev center:
-  # http://devcenter.wercker.com/docs/steps/index.html
-  steps:
-    # A step that executes `npm install`
-    - internal/docker-build:
+   steps:
+      - internal/docker-build:
         username: $USERNAME
         password: $PASSWORD
         repository: tadakamalla/mynode
