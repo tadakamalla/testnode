@@ -28,7 +28,7 @@ push:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        repository: tadakamalla/mynode
+        repository: tadakamalla/mynode:latest
         registry: https://registry.hub.docker.com
 deploy:
   steps:
