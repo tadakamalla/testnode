@@ -34,6 +34,11 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-push to docker registry:
-   steps:
-    - docker push tadakamalla/mynode
+deploy:
+  steps:
+    - docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        tag: testing-wercker
+        repository: tadakamalla/mynode
+        
