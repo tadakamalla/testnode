@@ -23,7 +23,6 @@ build:
   # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     # A step that executes `npm install`
-    - npm-install
     - internal/docker-build:
         username: $USERNAME
         password: $PASSWORD
