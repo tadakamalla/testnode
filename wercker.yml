@@ -25,7 +25,7 @@ build:
     # A step that executes `npm install` command
     - npm-install
     # A step that executes build
-    - build -t tadakamalla/mynode .
+    - docker build -t tadakamalla/mynode .
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
@@ -47,4 +47,4 @@ deploy:
     - script:
         name: webhook
         code: 
-          curl -k -X POST https://140.86.35.3//api/v2/deployments/tadakamalla-mynode-20170717-164746/webhook/restart?token=ovjsaiwb
+          curl -k -X POST https://140.86.35.3/api/v2/deployments/Mynode-20170824-130635/webhook/restart?token=mxugrxgp
