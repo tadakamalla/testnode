@@ -35,5 +35,5 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
 push to docker registry:
-    steps:
-        docker push tadakamalla/mynode
+   steps:
+    - docker push tadakamalla/mynode
