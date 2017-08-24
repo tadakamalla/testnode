@@ -24,7 +24,7 @@ build:
   steps:
     # A step that executes `npm install` command
     - npm-install
-   - script:
+    - script:
         name: build image
         code: docker build -t https://registry.hub.docker.com/tadakamalla/mynode .
 
