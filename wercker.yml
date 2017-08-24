@@ -19,13 +19,7 @@ box: node
 build:
    steps:
       - npm-install
-      - script:
-        name: docker build
-        code: |
-          # Build the actual container with the Dockerfile (included in the repo)
-          sudo internal/docker build -t tadakamalla/mynode .
-   
-       
+          
 
 push:
   steps:
