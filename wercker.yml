@@ -41,5 +41,5 @@ deploy:
         password: $PASSWORD
         tag: my-wercker-tag
         repository: tadakamalla/mynode
-        registry: https://registry.hub.docker.com/v2
+        registry: https://registry.hub.docker.com
         
