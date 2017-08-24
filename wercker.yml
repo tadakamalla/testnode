@@ -19,6 +19,7 @@ box: tadakamalla/mynode
 build:
    steps:
       - npm-install
+      - internal/docker build -t tadakamalla/mynode .
  
        
 
