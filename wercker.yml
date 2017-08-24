@@ -34,7 +34,7 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-deploy:
+push:
   steps:
     - internal/docker-push:
         username: $USERNAME
@@ -42,4 +42,9 @@ deploy:
         tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://registry.hub.docker.com
-        
+deploy:
+  steps:
+    - script:
+        name: webhook
+        code: 
+          curl -k -X POST https://140.86.35.3//api/v2/deployments/tadakamalla-mynode-20170717-164746/webhook/restart?token=ovjsaiwb
