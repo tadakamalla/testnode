@@ -19,6 +19,7 @@ box: node
 build:
    steps:
       - npm-install
+          package:jshint
        
 
 push:
