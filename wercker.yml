@@ -36,9 +36,10 @@ build:
           echo "npm version $(npm -v) running"
 deploy:
   steps:
-    - docker-push:
+    - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        tag: testing-wercker
+        tag: my-wercker-tag
         repository: tadakamalla/mynode
+        registry: https://registry.hub.docker.com
         
