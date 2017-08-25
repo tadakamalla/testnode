@@ -16,8 +16,4 @@ deploy:
     - script:
         name: webhook
         code: 
-<<<<<<< HEAD
          curl -k -X POST https://140.86.35.3/api/v2/deployments/tadakamalla-mynode-20170824-204108/webhook/restart?token=hssnkcpr
-=======
-          curl -k -X POST https://140.86.35.3/api/v2/deployments/tadakamalla-mynode-20170824-204108/webhook/restart?token=hssnkcpr
->>>>>>> c14ab32ca2e7e7b9b3781b0d8f05f922ad561d55
