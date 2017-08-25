@@ -9,6 +9,7 @@ push:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
+        tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://registry.hub.docker.com
 deploy:
