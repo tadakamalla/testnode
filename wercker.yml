@@ -12,7 +12,7 @@ push:
         password: $PASSWORD
         tag: my-wercker-tag
         repository: tadakamalla/mynode
-        registry: https://registry.hub.docker.com
+        registry: https://index.docker.io/v1/
 deploy:
   steps:
     - script:
