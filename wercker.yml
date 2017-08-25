@@ -1,4 +1,4 @@
-box: node
+box: tadakamalla/mynode
 build:
   steps:
     - npm-install
@@ -13,8 +13,6 @@ push:
         tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://registry.hub.docker.com
-        cmd: COPY . /usr/src/app
-
 deploy:
   steps:
     - script:
