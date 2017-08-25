@@ -2,7 +2,7 @@ box: node
 build:
   steps:
     - npm-install
-        cmd:  COPY . /usr/src/app
+        cmd: COPY . /usr/src/app
     - internal/watch:
         code: node server.js
         reload: true     
