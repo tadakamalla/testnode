@@ -2,9 +2,6 @@ box: node
 build:
    steps:
       - npm-install
-image:
-  step:
-     - docker build -t tadakamalla/mynode .          
 
 push:
   steps:
@@ -14,7 +11,6 @@ push:
         tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://registry.hub.docker.com
-        ports: "8085, 8085"
 deploy:
   steps:
     - script:
