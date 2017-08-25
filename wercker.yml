@@ -2,7 +2,6 @@ box: node
 build:
    steps:
       - npm-install
-
 push:
   steps:
     - internal/docker-push:
