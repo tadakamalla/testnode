@@ -33,4 +33,4 @@ deploy:
     - script:
         name: webhook
         code: 
-          curl -k -X POST https://140.86.35.3/api/v2/deployments/Mynode-20170824-130635/webhook/restart?token=mxugrxgp
+          curl -k -X POST https://140.86.35.3/api/v2/deployments/tadakamalla-mynode-20170824-203235/webhook/restart?token=woeqabzg
