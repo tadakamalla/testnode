@@ -1,9 +1,9 @@
 box: node
 build:
-   steps:
+  steps:
     - script:
-        name:build command
-        code:npm install 
+        name: build command
+        code: npm install 
 push:
   steps:
     - internal/docker-push:
