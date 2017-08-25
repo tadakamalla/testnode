@@ -2,7 +2,6 @@ box: node
 build:
   steps:
     - npm-install
-        cmd: COPY . /usr/src/app
     - internal/watch:
         code: node server.js
         reload: true     
@@ -14,7 +13,8 @@ push:
         tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://registry.hub.docker.com
-        cmd: npm start
+        cmd: COPY . /usr/src/app
+
 deploy:
   steps:
     - script:
