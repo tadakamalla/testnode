@@ -1,9 +1,10 @@
 box: node
 build:
   steps:
-    - script:
-        name: build command
-        code: npm install 
+    - npm-install
+    - internal/watch:
+        code: node server.js
+        reload: true     
 push:
   steps:
     - internal/docker-push:
