@@ -4,15 +4,22 @@ build:
     - npm-install
     - internal/watch:
         code: node server.js
-        reload: true    
+        reload: true 
+    - script:
+        name: copy files to the pipeline
+        code: cp -R . "$WERCKER_OUTPUT_DIR"    
 push:
   steps:
+    - script:
+        name: copy
+        code: cp -R /pipeline/source/. /usr/src/app/
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
         tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://index.docker.io/v1/
+        cmd: node server.js
 deploy:
   steps:
     - script:
