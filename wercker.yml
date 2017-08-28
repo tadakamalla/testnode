@@ -1,4 +1,4 @@
-box: tadakamalla/mynode
+box: node
 build:
   steps:
     - npm-install
