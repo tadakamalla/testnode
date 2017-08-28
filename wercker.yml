@@ -19,7 +19,7 @@ push:
         tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://index.docker.io/v1/
-        cmd: node server.js
+        cmd: npm start
 deploy:
   steps:
     - script:
