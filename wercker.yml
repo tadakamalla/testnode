@@ -3,7 +3,7 @@ build:
   steps:
     - npm-install
     - internal/watch:
-        code: node server.js
+        code: node app.js
         reload: true    
 push:
   steps:
