@@ -1,4 +1,4 @@
-box: node
+box: tadakamalla/mynode
 build:
   steps:
     - npm-install
@@ -6,7 +6,7 @@ build:
         name: copy files to the pipeline
         code: cp -R . $WERCKER_OUTPUT_DIR  
 push:
-  box: node
+  box: tadakamalla/mynode
   steps:
     - script:
         name: copy
