@@ -4,9 +4,6 @@ build:
     - npm-install
 push:
   steps:
-    - script:
-        name: copy
-        code: cp -R /pipeline/source/target /usr/src/app/
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
