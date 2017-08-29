@@ -2,9 +2,6 @@ box: node
 build:
   steps:
     - npm-install
-    - internal/watch:
-        code: node server.js
-        reload: true 
     - script:
         name: copy files to the pipeline
         code: cp -R . "$WERCKER_OUTPUT_DIR"    
@@ -12,7 +9,7 @@ push:
   steps:
     - script:
         name: copy
-        code: cp -R /pipeline/source/target/. /usr/src/app/
+        code: cp -R /pipeline/source/. /usr/src/app/
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
