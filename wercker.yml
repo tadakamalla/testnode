@@ -4,13 +4,13 @@ build:
     - npm-install
     - script:
         name: copy files to the pipeline
-        code: cp -R . $WERCKER_OUTPUT_DIR  
+        code: cp -R /pipeline/build/. $WERCKER_OUTPUT_DIR  
 push:
   box: tadakamalla/mynode
   steps:
     - script:
         name: copy
-        code: cp -R /pipeline/build/ /usr/src/app/
+        code: cp -R /pipeline/source/ /usr/src/app/
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
