@@ -10,7 +10,7 @@ push:
   steps:
     - script:
         name: copy
-        code: cp -R /pipeline/output/. /usr/src/app/
+        code: cp -R /pipeline/source/. /usr/src/app/
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
