@@ -7,7 +7,6 @@ push:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        ports: "8085"
         tag: latest
         repository: tadakamalla/mynode
         registry: https://index.docker.io/v1/
@@ -17,4 +16,4 @@ deploy:
     - script:
         name: webhook
         code: 
-         curl -k -X POST https://140.86.13.180/api/v2/deployments/tadakamalla-mynode-20170829-123914/webhook/restart?token=khojlcuo
+         curl -k -X POST https://140.86.13.180/api/v2/deployments/tadakamalla-mynode-20170831-163239/webhook/restart?token=ctxaapgp
