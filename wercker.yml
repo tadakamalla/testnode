@@ -1,4 +1,4 @@
-box: tadakamalla/mynode:latest
+box: node
 build:
   steps:
     - npm-install
@@ -7,7 +7,6 @@ push:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://index.docker.io/v1/
         
