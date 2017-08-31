@@ -1,4 +1,4 @@
-box: tadakamalla/mynode
+box: tadakamalla/mynode:my-wercker-tag
 build:
   steps:
     - npm-install
