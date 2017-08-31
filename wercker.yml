@@ -15,4 +15,4 @@ deploy:
     - script:
         name: webhook
         code: 
-         curl -k -X POST https://140.86.13.180/api/v2/deployments/tadakamalla-mynode-20170831-163239/webhook/restart?token=ctxaapgp
+         curl -k -X POST https://140.86.13.180/api/v2/deployments/tadakamalla-mynode-20170831-195116/webhook/restart?token=jdxtnokb
