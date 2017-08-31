@@ -7,7 +7,7 @@ push:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        tag: latest
+        tag: my-wercker-tag
         repository: tadakamalla/mynode
         registry: https://index.docker.io/v1/
         
