@@ -7,7 +7,7 @@ push:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        repository: tadakamalla/testnode
+        repository: tadakamalla/mynode
         tag: my-wercker-tag
         registry: https://index.docker.io/v1/
         cmd: node /pipeline/source/server.js
