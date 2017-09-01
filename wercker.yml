@@ -9,6 +9,7 @@ push:
         password: $PASSWORD
         repository: tadakamalla/testnode
         registry: https://index.docker.io/v1/
+        cmd: node /pipeline/source/server.js
         
 deploy:
   steps:
