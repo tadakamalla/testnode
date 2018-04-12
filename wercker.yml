@@ -9,7 +9,7 @@ push:
         password: $PASSWORD
         repository: tadakamalla/mynode
         tag: latest
-        registry: https://registry-2.docker.io/
+        registry: https://registry.hub.docker.com/
         cmd: node /pipeline/source/server.js
         
 deploy:
