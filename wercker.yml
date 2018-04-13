@@ -17,4 +17,4 @@ deploy:
     - script:
         name: webhook
         code: 
-         curl -k -X POST https://140.86.41.49/api/v2/deployments/tadakamalla-mynode-20171017-125152/webhook/restart?token=wugoaboc
+         curl -k -X POST https://129.144.145.74/api/v2/deployments/Demostack-20180412-202415/webhook/restart?token=jvxavtpp
