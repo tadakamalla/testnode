@@ -17,5 +17,5 @@ deploy:
     - script:
         name: webhook
         code: 
-        curl -k -X POST https://129.144.145.176/api/v2/deployments/Demostack-20180412-202415/webhook/restart?token=jvxavtpp
+         curl -k -X POST https://129.144.145.176/api/v2/deployments/Demostack-20180412-202415/webhook/restart?token=jvxavtpp
                
